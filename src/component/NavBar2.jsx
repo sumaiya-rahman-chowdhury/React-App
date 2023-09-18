@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Link from './Link';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiFillCloseCircle } from 'react-icons/ai';
+
 
 const NavBar2 = () => {
     
@@ -18,7 +20,12 @@ const NavBar2 = () => {
       
     return (
         <div>
-            <GiHamburgerMenu className='text-xl md:hidden'></GiHamburgerMenu>
+           <div className='text-xl md:hidden' onClick={()=> setOpen(!open)}>
+            {
+                open === true ? <GiHamburgerMenu ></GiHamburgerMenu> : <AiFillCloseCircle></AiFillCloseCircle>
+            }
+           
+           </div>
             <ul className='flex flex-wrap'>
             {
                 routes.map(route=> <Link key={route.id} route={route}></Link>)
