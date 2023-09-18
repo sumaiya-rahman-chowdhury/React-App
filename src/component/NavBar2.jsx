@@ -20,13 +20,15 @@ const NavBar2 = () => {
       
     return (
         <div>
-           <div className='text-xl md:hidden' onClick={()=> setOpen(!open)}>
+           <div className='text-2xl md:hidden bg-amber-600 p-3 relative' onClick={()=> setOpen(!open)}>
             {
-                open === true ? <GiHamburgerMenu ></GiHamburgerMenu> : <AiFillCloseCircle></AiFillCloseCircle>
+                open  ?<AiFillCloseCircle></AiFillCloseCircle>  : <GiHamburgerMenu ></GiHamburgerMenu>
             }
            
            </div>
-            <ul className='flex flex-wrap'>
+            <ul className={`md:flex absolute md:static lg:static
+            ${open?'top-12':'-top-60 '}
+            px-6 bg-amber-600 text-white `}>
             {
                 routes.map(route=> <Link key={route.id} route={route}></Link>)
             }
