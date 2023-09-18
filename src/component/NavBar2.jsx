@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Link from './Link';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const NavBar2 = () => {
+    
+    const [open,setOpen] = useState(false)
 
     const routes = [
         { id: 1, path: '/', name: 'Home' },
@@ -14,9 +18,12 @@ const NavBar2 = () => {
       
     return (
         <div>
+            <GiHamburgerMenu className='text-xl md:hidden'></GiHamburgerMenu>
+            <ul className='flex flex-wrap'>
             {
-                routes.map(route=> <li key={route.id}> <a href={`route.path`}>{route.name}</a> </li>)
+                routes.map(route=> <Link key={route.id} route={route}></Link>)
             }
+        </ul>
         </div>
     );
 };
