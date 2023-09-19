@@ -31,9 +31,9 @@ const Phones = () => {
             bottom: 5,
           }}
         ><Bar dataKey="price" fill="#8884d8" />
-        <XAxis></XAxis>
+        <XAxis dataKey="name"></XAxis>
         <YAxis></YAxis>
-        
+        <Tooltip></Tooltip>
         </BarChart>
         </div>
     );

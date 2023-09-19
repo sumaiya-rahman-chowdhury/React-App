@@ -1,8 +1,13 @@
-# React + Vite
+# responsive navbar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Best Prices in The town :
+it shows 3 cards .
 
-Currently, two official plugins are available:
+# Used two bar chart from 
+1. https://recharts.org/en-US/examples/SimpleBarChart (for showing price)
+2.  Add components that you want to be drawn
+https://recharts.org/en-US/guide/getting-started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# ![Demo](/public/demo.png)
+
+

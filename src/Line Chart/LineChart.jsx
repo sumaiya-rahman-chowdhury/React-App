@@ -50,6 +50,7 @@ const LineChart = () => {
             <LC width={800} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}> <Line dataKey="mathMarks"></Line> 
             <XAxis dataKey="studentName"></XAxis>
             <YAxis></YAxis>
+            <Tooltip></Tooltip>
             </LC>
 
         </div>
