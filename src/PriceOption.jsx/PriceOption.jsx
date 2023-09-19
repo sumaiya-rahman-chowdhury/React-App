@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { IoCheckmarkCircleSharp } from 'react-icons/io5';
 
 const PriceOption = ({priceOption}) => {

@@ -46,7 +46,7 @@ const LineChart = () => {
       ]
       
     return (
-        <div className=' mt-10 flex justify-center'> 
+        <div className=' mt-20 flex justify-center'> 
             <LC width={800} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}> <Line dataKey="mathMarks"></Line> 
             <XAxis dataKey="studentName"></XAxis>
             <YAxis></YAxis>
